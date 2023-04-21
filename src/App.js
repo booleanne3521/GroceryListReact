@@ -1,5 +1,6 @@
 import Content from './Content';
 import Header from './Header';
+import AddItem from './AddItem';
 import Footer from './Footer';
 import { useState } from 'react';
 
@@ -37,6 +38,7 @@ function App() {
   return (
     <div className="App">
     <Header title="My Shoppinglist" />
+    <AddItem />
     <Content
       items = {items} 
       handleCheck = {handleCheck}
